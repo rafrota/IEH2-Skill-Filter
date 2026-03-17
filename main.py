@@ -41,7 +41,7 @@ def get_table(json_data, frame=st):
     )
 
 def get_all_from_file():
-    file = f"ieh2/ieh2_dados.json"
+    file = "ieh2_dados.json"
     all_data = []
     with open(file, mode="r", encoding="utf-8") as f:
         json_data = json.load(f)
