@@ -66,9 +66,13 @@ def find_effect(hero_class, effect):
                 filtered_data.append(hero_info)
     return filtered_data
 
+st.set_page_config(
+    page_title="Idle Epic Hero 2 Filter",
+    layout="wide"
+)
 st.session_state.all_data = get_all_from_file()
 
-st.title("Idle Epic Hero 2")
+st.title("Idle Epic Hero 2 Filter")
 all_data = st.session_state.all_data
 hero_class = st.selectbox("Class", ["All","Warrior","Wizard","Angel","Thief","Archer","Tamer"])
 input = st.text_input('Filtro')
